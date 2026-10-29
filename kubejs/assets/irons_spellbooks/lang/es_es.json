@@ -1,0 +1,5 @@
+{
+  "item.irons_spellbooks.cinderous_soulcaller": "Invocador de almas cinerosas",
+  "item.irons_spellbooks.cinderous_soulcaller.failure.no_soul": "Nada responde a la llamada...",
+  "item.irons_spellbooks.cinderous_soulcaller.failure.in_progress": "Ya ha respondido un eco."
+}

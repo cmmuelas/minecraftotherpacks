@@ -1,0 +1,48 @@
+[18:27:22] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
+[18:27:22] [INIT] Loaded plugins:
+[18:27:22] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[18:27:22] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbquests.kubejs.KubeJSIntegration
+[18:27:22] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbteams.kubejs.FTBTeamsKubeJSPlugin
+[18:27:22] [INIT] - com.almostreliable.lootjs.kube.LootJSPlugin
+[18:27:23] [INFO] Loaded script server_scripts:00_maincra_core.js in 0.014 s
+[18:27:23] [INFO] 10_boss_progression.js#84: [Maincra] Registrados 16 jefes con crédito individual en 100 bloques.
+[18:27:23] [INFO] Loaded script server_scripts:10_boss_progression.js in 0.007 s
+[18:27:23] [INFO] Loaded script server_scripts:15_branch_progression.js in 0.002 s
+[18:27:23] [INFO] 20_recipe_gates.js#164: Loaded Java class 'net.minecraft.world.item.enchantment.EnchantmentHelper'
+[18:27:23] [INFO] 20_recipe_gates.js#165: Loaded Java class 'net.minecraftforge.registries.ForgeRegistries'
+[18:27:23] [INFO] Loaded script server_scripts:20_recipe_gates.js in 0.009 s
+[18:27:23] [INFO] Loaded script server_scripts:30_balance_recipes.js in 0.001 s
+[18:27:23] [INFO] 30_daily_missions.js#4: Loaded Java class 'java.time.ZoneId'
+[18:27:23] [INFO] 30_daily_missions.js#5: Loaded Java class 'java.time.ZonedDateTime'
+[18:27:23] [INFO] 30_daily_missions.js#6: Loaded Java class 'java.time.LocalTime'
+[18:27:23] [INFO] 30_daily_missions.js#7: Loaded Java class 'java.time.format.DateTimeFormatter'
+[18:27:23] [INFO] 30_daily_missions.js#8: Loaded Java class 'dev.ftb.mods.ftbquests.net.EditObjectResponseMessage'
+[18:27:23] [INFO] 30_daily_missions.js#9: Loaded Java class 'java.lang.Integer'
+[18:27:23] [INFO] 30_daily_missions.js#13: Loaded Java class 'net.minecraft.tags.DamageTypeTags'
+[18:27:23] [INFO] Loaded script server_scripts:30_daily_missions.js in 0.027 s
+[18:27:23] [INFO] Loaded script server_scripts:40_progressive_loot.js in 0.0 s
+[18:27:23] [INFO] Loaded script server_scripts:90_admin_commands.js in 0.002 s
+[18:27:23] [INFO] example.js#5: Hello, World! (Loaded server scripts)
+[18:27:23] [INFO] Loaded script server_scripts:example.js in 0.0 s
+[18:27:23] [INFO] 97_daily_missions_static.js#9: Loaded Java class 'net.minecraft.resources.ResourceLocation'
+[18:27:23] [INFO] 97_daily_missions_static.js#335: [Maincra Daily] Interfaz estática y motor integrado v7 cargados correctamente.
+[18:27:23] [INFO] Loaded script server_scripts:97_daily_missions_static.js in 0.02 s
+[18:27:23] [INFO] 99_daily_missions_hotfix.js#5: Loaded Java class 'java.util.ArrayList'
+[18:27:23] [INFO] 99_daily_missions_hotfix.js#6: Loaded Java class 'dev.ftb.mods.ftbxmodcompat.ftbquests.kubejs.FTBQuestsKubeJSPlayerData'
+[18:27:23] [INFO] 99_daily_missions_hotfix.js#7: Loaded Java class 'dev.ftb.mods.ftbquests.net.SyncTeamDataMessage'
+[18:27:23] [INFO] 99_daily_missions_hotfix.js#411: [Maincra Daily] Instalador v11 registrado; se aplicará al cargar el servidor.
+[18:27:23] [INFO] Loaded script server_scripts:99_daily_missions_hotfix.js in 0.014 s
+[18:27:23] [INFO] Loaded script server_scripts:35_case_enchantment_rewards.js in 0.001 s
+[18:27:23] [INFO] Loaded 12/12 KubeJS server scripts in 0.117 s with 0 errors and 0 warnings
+[18:27:23] [INFO] Scripts loaded
+[18:27:23] [INFO] Initializing recipe event...
+[18:27:26] [INFO] Processing recipes...
+[18:27:26] [INFO] Found 6543 recipes in 121.7 ms
+[18:27:26] [INFO] Posted recipe events in 519.5 ms
+[18:27:26] [INFO] Added 2 recipes, removed 2 recipes, modified 49 recipes, with 0 failed recipes in 55.44 ms
+[18:27:35] [INFO] Server resource reload complete!
+[18:27:37] [INFO] 99_daily_missions_hotfix.js#390: [Maincra Daily] Motor v11 instalado: reset anti-ráfagas, historial y resincronización activa.
+[18:36:17] [WARN] 99_daily_missions_hotfix.js#327: [Maincra Daily] Reset aplicado; sincronización inmediata no disponible: InternalError: The choice of Java method dev.architectury.networking.simple.BaseS2CMessage.sendTo matching JavaScript argument types (net.minecraft.server.level.ServerPlayer) is ambiguous; candidate methods are: 
+    void sendTo(java.lang.Iterable)
+    void sendTo(net.minecraft.server.level.ServerPlayer)
+[18:36:17] [INFO] 99_daily_missions_hotfix.js#335: [Maincra Daily] V11: ciclo 2026-10-27 y selección [6,12,23,19,5] reiniciados para Muelas_.

@@ -1,0 +1,157 @@
+{
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "cronicas_explorador"
+  group: "63BEAD623F394DC5"
+  icon: "minecraft:filled_map"
+  id: "2C33DA9B74838D38"
+  order_index: 6
+  progression_mode: "linear"
+  title: "7. Crónicas del Explorador"
+  quests: [
+    {
+      description: [
+        "Explora mazmorras y estructuras hasta encontrar el disco de música 13. La tarea utiliza el disco como prueba de exploración porque FTB Quests no puede identificar de qué cofre procede."
+        ""
+        "El objeto solo tiene que estar en tu inventario y no se consume."
+        ""
+        "§6Objetivo: §fConsigue el disco de música 13."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "minecraft:music_disc_13"
+      id: "7100000000000001"
+      shape: "square"
+      subtitle: "La primera crónica."
+      title: "Mazmorras del mundo"
+      x: 0
+      y: 0
+      tasks: [{ id: "769B3A0905D2BF6C" item: "minecraft:music_disc_13" type: "item" }]
+      rewards: [{ id: "668FA5AA15525FC0" type: "xp" xp: 300 }]
+    }
+    {
+      dependencies: ["7100000000000001"]
+      description: [
+        "Investiga naufragios y ruinas submarinas, consigue un mapa del tesoro y localiza un tesoro enterrado. El Corazón del mar suele encontrarse en ese cofre."
+        ""
+        "§6Objetivo: §fConsigue un Corazón del mar."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "minecraft:heart_of_the_sea"
+      id: "7100000000000002"
+      shape: "square"
+      subtitle: "Piedra bajo las olas."
+      title: "Ruinas submarinas"
+      x: 3
+      y: 0
+      tasks: [{ id: "1F18B044EA51AF6B" item: "minecraft:heart_of_the_sea" type: "item" }]
+      rewards: [{ id: "0AE25F9252E336CC" type: "xp" xp: 450 }]
+    }
+    {
+      dependencies: ["7100000000000002"]
+      description: [
+        "Localiza una Ciudad antigua en el Deep Dark y recupera un Fragmento de eco de sus cofres. No necesitas enfrentarte todavía al Warden."
+        ""
+        "Esta misión concede Exploración I y será el requisito temático de la caza del Warden cuando llegue su turno."
+        ""
+        "§6Objetivo: §fConsigue un Fragmento de eco."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "minecraft:echo_shard"
+      id: "7100000000000003"
+      shape: "square"
+      subtitle: "El mapa desciende al silencio."
+      title: "Ciudad antigua"
+      x: 6
+      y: 0
+      tasks: [{ id: "01252F1570B4119F" item: "minecraft:echo_shard" type: "item" }]
+      rewards: [{ id: "6289833CFB5A0BAF" type: "xp" xp: 750 }]
+    }
+    {
+      dependencies: ["7100000000000003"]
+      description: [
+        "End Remastered reparte los ojos necesarios para el portal entre distintas estructuras y métodos de obtención. Para esta misión basta con encontrar un Ojo viejo."
+        ""
+        "Esta misión concede Exploración II. En el orden actual, el Ojo viejo es el requisito temático de la caza de Giant, posterior al Ender Dragon."
+        ""
+        "§6Objetivo: §fConsigue un Ojo viejo."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "endrem:old_eye"
+      id: "7100000000000004"
+      shape: "square"
+      subtitle: "Las pistas del portal."
+      title: "Los ojos perdidos"
+      x: 9
+      y: 0
+      tasks: [{ id: "57B66E4104470D10" item: "endrem:old_eye" type: "item" }]
+      rewards: [{ id: "58C155D53016A191" type: "xp" xp: 900 }]
+    }
+    {
+      dependencies: ["7100000000000004" "76B2B40795BFB50A"]
+      description: [
+        "Después de derrotar al Ender Dragon, deja constancia de que has completado el portal de End Remastered y has entrado en el End. La muerte del dragón se registra por separado en el Camino del Cazador."
+        ""
+        "La entrada mediante portal personalizado no se detecta de forma fiable con la configuración actual. Esta misión concede Exploración III."
+        ""
+        "§eConfirmación manual:§r marca la tarea después de completar el portal y entrar en el End."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "minecraft:end_portal_frame"
+      id: "7100000000000005"
+      shape: "square"
+      subtitle: "La expedición definitiva."
+      title: "El fin del mapa"
+      x: 9
+      y: 3
+      tasks: [{ id: "72CCC42A6DD437ED" title: "He completado el portal y entrado en el End" type: "checkmark" }]
+      rewards: [{ id: "0B625FE3B03B5413" type: "xp" xp: 1500 }]
+    }
+    {
+      dependencies: ["7100000000000005"]
+      description: [
+        "Localiza las Catacumbas de Iron's Spells y explora sus pasillos y salas. No necesitas derrotar a The Dead King si su misión del Camino todavía no está activa."
+        ""
+        "La versión instalada no dispone de una tarea de estructura fiable para esta localización."
+        ""
+        "§eConfirmación manual:§r marca la tarea cuando hayas entrado y recorrido las Catacumbas."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "irons_spellbooks:epic_ink"
+      id: "7100000000000006"
+      shape: "square"
+      subtitle: "Historia bajo la piedra."
+      title: "Catacumbas arcanas"
+      x: 6
+      y: 3
+      tasks: [{ id: "0BBAFC2FF5196474" title: "He entrado y explorado las Catacumbas" type: "checkmark" }]
+      rewards: [{ id: "3E1A84D6068FEA2E" type: "xp" xp: 900 }]
+    }
+    {
+      dependencies: ["7100000000000006"]
+      description: [
+        "Establece tres puntos de expedición reconocibles mediante Waystones, refugios, bases avanzadas o marcadores próximos a estructuras importantes."
+        ""
+        "JourneyMap puede ayudarte a organizarlos, pero la misión no depende de una aplicación concreta ni puede comprobarlos automáticamente."
+        ""
+        "§eConfirmación manual:§r marca la tarea cuando tengas tres puntos de expedición distintos y utilizables."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "minecraft:filled_map"
+      id: "7100000000000007"
+      shape: "square"
+      subtitle: "Una red de expediciones."
+      title: "Cartógrafo del mundo"
+      x: 3
+      y: 3
+      tasks: [{ id: "6FF76F476BFF7088" title: "He establecido tres puntos de expedición" type: "checkmark" }]
+      rewards: [{ id: "2342FC4BDBB970F5" type: "xp" xp: 1050 }]
+    }
+  ]
+}

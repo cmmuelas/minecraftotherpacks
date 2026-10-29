@@ -1,0 +1,71 @@
+# CasesMod — Server configuration
+# Path: /config/CasesMod/CasesMod.yml
+#
+# Loaded on the logical server (integrated single-player or dedicated).
+# In multiplayer the client receives these values via PacketSyncConfig
+# on login and never reads this file directly.
+
+spin:
+
+  # Duration of the roulette spin animation in ticks.
+  # 20 ticks = 1 second. Default: 100 (5 s). Range: [20, 600].
+  duration_ticks: 150
+
+  # Show the "Open x5" button when the player holds ≥5 cases.
+  # true = enabled, false = disabled
+  multi_open_enabled: false
+
+legendary:
+
+  # Message broadcast to ALL players in chat when a legendary item is won.
+  # Variables: {player} = player name, {item} = item name
+  # Colour codes: §6=gold §c=red §a=green §b=aqua §5=purple §r=reset
+  # Leave empty to disable: message: ""
+  message: "§6[Maincra] §r{player} §6ha obtenido §r{item} §6(legendario)."
+
+  # Enable or disable the legendary sound effect.
+  # true = enabled, false = disabled
+  sound_enabled: true
+
+  # true  = every connected player hears the sound
+  # false = only the player who won the legendary item hears it
+  sound_broadcast: true
+
+  # Sound event identifier (ResourceLocation format: namespace:path)
+  # Examples:
+  #   minecraft:entity.wither.spawn
+  #   minecraft:ui.toast.challenge_complete
+  #   minecraft:entity.ender_dragon.death
+  sound_id: "minecraft:entity.wither.spawn"
+
+particles:
+
+  # Visual sequence inspired by Counter-Strike:
+  # blue -> purple -> pink -> red -> yellow/gold.
+  # CasesMod 1.1.0 keeps the roulette frame colours hard-coded in the JAR;
+  # this configuration aligns the configurable claim effects with that sequence.
+
+  common:
+    enabled: true
+    type: "minecraft:falling_water"
+    count: 10
+
+  uncommon:
+    enabled: true
+    type: "minecraft:portal"
+    count: 12
+
+  rare:
+    enabled: true
+    type: "minecraft:cherry_leaves"
+    count: 14
+
+  epic:
+    enabled: true
+    type: "minecraft:damage_indicator"
+    count: 16
+
+  legendary:
+    enabled: true
+    type: "minecraft:totem_of_undying"
+    count: 24

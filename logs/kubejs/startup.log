@@ -1,0 +1,12 @@
+[18:27:00] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
+[18:27:00] [INIT] Loaded plugins:
+[18:27:00] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[18:27:00] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbquests.kubejs.KubeJSIntegration
+[18:27:00] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbteams.kubejs.FTBTeamsKubeJSPlugin
+[18:27:00] [INIT] - com.almostreliable.lootjs.kube.LootJSPlugin
+[18:27:01] [INFO] 10_patch_majrusz.js#25: [Maincra] Configuración de Majrusz preparada: Expert tras Tank, Master tras Cornelia.
+[18:27:01] [INFO] Loaded script startup_scripts:10_patch_majrusz.js in 0.142 s
+[18:27:01] [INFO] example.js#5: Hello, World! (Loaded startup scripts)
+[18:27:01] [INFO] Loaded script startup_scripts:example.js in 0.001 s
+[18:27:01] [INFO] Loaded script startup_scripts:30_case_enchantment_rewards.js in 0.003 s
+[18:27:01] [INFO] Loaded 3/3 KubeJS startup scripts in 0.491 s with 0 errors and 0 warnings

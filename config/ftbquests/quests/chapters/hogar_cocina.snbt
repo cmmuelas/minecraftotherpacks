@@ -1,0 +1,157 @@
+{
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "hogar_cocina"
+  group: "63BEAD623F394DC5"
+  icon: "farmersdelight:cooking_pot"
+  id: "530386FD15A7845D"
+  order_index: 5
+  progression_mode: "linear"
+  title: "6. Hogar, Cocina y Comunidad"
+  quests: [
+    {
+      description: [
+        "Prepara una Mochila estándar de Traveler's Backpack para llevar comida, herramientas y materiales durante las expediciones."
+        ""
+        "Consulta JEI para elegir una de sus recetas. La tarea solo comprueba que la mochila está en tu inventario y no la consume."
+        ""
+        "§6Objetivo: §fConsigue una Mochila estándar."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "travelersbackpack:standard"
+      id: "6100000000000001"
+      shape: "square"
+      subtitle: "Un lugar al que regresar."
+      title: "El campamento del cazador"
+      x: 0
+      y: 0
+      tasks: [{ id: "0F73DFA729F580D0" item: "travelersbackpack:standard" type: "item" }]
+      rewards: [{ id: "5B9C04DFA2D7C802" type: "xp" xp: 150 }]
+    }
+    {
+      dependencies: ["6100000000000001"]
+      description: [
+        "Fabrica una Tabla de picar de Farmer's Delight. Colócala y utiliza un cuchillo para cortar ingredientes, obtener subproductos y preparar recetas más elaboradas."
+        ""
+        "§6Objetivo: §fConsigue una Tabla de picar."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "farmersdelight:cutting_board"
+      id: "6100000000000002"
+      shape: "square"
+      subtitle: "Cortar antes de cocinar."
+      title: "Preparar los alimentos"
+      x: 3
+      y: 0
+      tasks: [{ id: "55AD626B9ADAEFD3" item: "farmersdelight:cutting_board" type: "item" }]
+      rewards: [{ id: "2CA45CEEEDF0797D" type: "xp" xp: 225 }]
+    }
+    {
+      dependencies: ["6100000000000002"]
+      description: [
+        "Añade una Olla de Farmer's Delight a tu cocina. Colócala sobre una fuente de calor y consulta JEI para preparar un guiso o una comida completa."
+        ""
+        "La tarea detecta la olla, no el plato cocinado. Esta misión concede Hogar y cocina I."
+        ""
+        "§6Objetivo: §fConsigue una Olla."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "farmersdelight:cooking_pot"
+      id: "6100000000000003"
+      shape: "square"
+      subtitle: "Cocina para sobrevivir lejos."
+      title: "Una comida completa"
+      x: 6
+      y: 0
+      tasks: [{ id: "444916EFC561440A" item: "farmersdelight:cooking_pot" type: "item" }]
+      rewards: [{ id: "0C51A66A4DF92793" type: "xp" xp: 375 }]
+    }
+    {
+      dependencies: ["6100000000000003"]
+      description: [
+        "Convierte tu base o una aldea en un asentamiento reconocible. Añade iluminación, una zona común, elementos decorativos y al menos una medida real de protección."
+        ""
+        "Puedes usar muros, defensas, Guard Villagers o cualquier solución equivalente. La construcción no puede detectarse automáticamente."
+        ""
+        "§eConfirmación manual:§r marca la tarea cuando el asentamiento esté decorado y protegido."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "minecraft:bell"
+      id: "6100000000000004"
+      shape: "square"
+      subtitle: "Un hogar que merece ser defendido."
+      title: "El asentamiento"
+      x: 9
+      y: 0
+      tasks: [{ id: "2FBDBCF7622B2597" title: "He decorado y protegido un asentamiento" type: "checkmark" }]
+      rewards: [{ id: "3BDE9BA53FA641FB" type: "xp" xp: 450 }]
+    }
+    {
+      dependencies: ["6100000000000004"]
+      description: [
+        "Encuentra una Waystone natural y actívala, o coloca una fabricada cuando su receta esté desbloqueada. Las Waystones generadas pueden utilizarse desde el comienzo."
+        ""
+        "La activación no se detecta de forma fiable, por lo que no necesitas romper ni llevarte el bloque. Esta misión concede Hogar y cocina II."
+        ""
+        "§eConfirmación manual:§r marca la tarea después de activar una Waystone."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "waystones:waystone"
+      id: "6100000000000005"
+      shape: "square"
+      subtitle: "Las expediciones dejan de estar aisladas."
+      title: "Red de viaje"
+      x: 9
+      y: 3
+      tasks: [{ id: "1A30BCDDE9785ACA" title: "He activado una Waystone" type: "checkmark" }]
+      rewards: [{ id: "71C2DD2AFC875D90" type: "xp" xp: 600 }]
+    }
+    {
+      dependencies: ["6100000000000005" "3774BE4AB10E22A3"]
+      description: [
+        "Después del Elder Guardian podrás fabricar la Warp Stone, el componente portátil de la red de Waystones."
+        ""
+        "Consulta JEI para ver su receta y recuerda que el viaje mantiene el coste de experiencia configurado en el servidor."
+        ""
+        "§6Objetivo: §fConsigue una Warp Stone."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "waystones:warp_stone"
+      id: "6100000000000006"
+      shape: "square"
+      subtitle: "Un regreso de emergencia."
+      title: "Warp Stone"
+      x: 6
+      y: 3
+      tasks: [{ id: "4CEB686A2F23F244" item: "waystones:warp_stone" type: "item" }]
+      rewards: [{ id: "14C89BE3227CBB6D" type: "xp" xp: 750 }]
+    }
+    {
+      dependencies: ["6100000000000006"]
+      description: [
+        "Encuentra una criatura de Critters and Companions y prepara un espacio adecuado para ella: recinto, estanque, refugio o hábitat adaptado a su comportamiento."
+        ""
+        "No todas las especies son domesticables, así que la misión no exige domesticar una criatura concreta."
+        ""
+        "§eConfirmación manual:§r marca la tarea cuando hayas encontrado la criatura y terminado su hábitat."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "minecraft:lead"
+      id: "6100000000000007"
+      shape: "square"
+      subtitle: "El mundo también se habita."
+      title: "Fauna y compañeros"
+      x: 3
+      y: 3
+      tasks: [{ id: "148D60183F6BC02F" title: "He encontrado una criatura y preparado su hábitat" type: "checkmark" }]
+      rewards: [{ id: "171E3C30FE536E4B" type: "xp" xp: 600 }]
+    }
+  ]
+}

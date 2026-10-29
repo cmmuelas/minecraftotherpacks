@@ -1,0 +1,450 @@
+{
+  default_hide_dependency_lines: false
+  default_quest_shape: "hexagon"
+  filename: "camino_del_cazador"
+  group: "63BEAD623F394DC5"
+  icon: "minecraft:netherite_sword"
+  id: "793F817746822BF5"
+  order_index: 0
+  progression_mode: "linear"
+  title: "1. Camino del Cazador"
+  quests: [
+    {
+      dependencies: ["2100000000000002"]
+      description: [
+        "Esta es la primera caza del Camino. Localiza una cámara subterránea de Mowzie's Mobs y enfréntate al Ferrous Wroughtnaut cuando ya hayas completado la iniciación de Artes Arcanas."
+        ""
+        "§6Requisitos: §fTener una Tinta Común y derrotar al Ferrous Wroughtnaut."
+        "§7Ataca su punto débil cuando quede expuesto; los golpes frontales apenas le afectan."
+        ""
+        "§eImportante:§r el jefe solo concede el rango si esta misión está activa. Si lo derrotas antes, conservarás sus drops, pero tendrás que repetir el combate."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "mowziesmobs:wroughtnaut_spawn_egg"
+      id: "2BF4019CBDC93589"
+      shape: "hexagon"
+      subtitle: "El coloso de hierro."
+      title: "Ferrous Wroughtnaut"
+      x: 0
+      y: 0
+      tasks: [
+        { id: "7FC9FBCDF91F4B66" item: "irons_spellbooks:common_ink" type: "item" }
+        { entity: "mowziesmobs:ferrous_wroughtnaut" id: "40DE4F570C79C72B" title: "Derrota al Ferrous Wroughtnaut" type: "kill" value: 1 }
+      ]
+      rewards: [
+        { id: "555B0DC436D59A12" type: "xp" xp: 450 }
+        { id: "1300000000000001" item: { Count: 1b id: "casesmod:case_item" tag: { CaseID: 3 CustomModelData: 3 } } type: "item" }
+      ]
+    }
+    {
+      dependencies: ["2BF4019CBDC93589" "3100000000000002"]
+      description: [
+        "La segunda caza pertenece al Ejército de No Muertos de Majrusz's Progressive Difficulty. Activa el evento y avanza hasta que aparezca Tank."
+        ""
+        "§6Requisitos: §fHaber derrotado al Ferrous Wroughtnaut, completar Respirar bajo el agua y tener un Tanque de oxígeno."
+        "§6Objetivo: §fDerrota a Tank."
+        ""
+        "§eImportante:§r debe morir mientras esta misión esté activa para aumentar tu rango."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "majruszsdifficulty:tank_spawn_egg"
+      id: "0EE236707AAF6FF2"
+      shape: "hexagon"
+      subtitle: "La muralla que camina."
+      title: "Tank"
+      x: 3
+      y: 0
+      tasks: [
+        { id: "1087C4124B22EF65" item: "aquamirae:oxygen_tank" type: "item" }
+        { entity: "majruszsdifficulty:tank" id: "74918E16B7EA7590" title: "Derrota a Tank" type: "kill" value: 1 }
+      ]
+      rewards: [
+        { id: "59F14B2D43D66D5E" type: "xp" xp: 600 }
+        { id: "1300000000000002" item: { Count: 1b id: "casesmod:case_item" tag: { CaseID: 4 CustomModelData: 4 } } type: "item" }
+      ]
+    }
+    {
+      dependencies: ["0EE236707AAF6FF2" "3100000000000003"]
+      description: [
+        "Conquista un monumento oceánico después de superar a Tank. La fatiga minera, la falta de aire y los guardianes convierten la preparación en parte del combate."
+        ""
+        "§6Requisitos: §fCompletar Monumento oceánico y tener 8 bloques de prismarina."
+        "§6Objetivo: §fDerrota a un Guardián anciano."
+        ""
+        "§eImportante:§r solo contará si tu rango actual corresponde a esta misión."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "minecraft:elder_guardian_spawn_egg"
+      id: "3774BE4AB10E22A3"
+      shape: "hexagon"
+      subtitle: "El centinela del monumento."
+      title: "Elder Guardian"
+      x: 6
+      y: 0
+      tasks: [
+        { id: "0668F98316055E50" item: "minecraft:prismarine" type: "item" count: 8 }
+        { entity: "minecraft:elder_guardian" id: "6306970C4971ED9E" title: "Derrota a un Guardián anciano" type: "kill" value: 1 }
+      ]
+      rewards: [
+        { id: "37D01ED5F0ACF867" type: "xp" xp: 750 }
+        { id: "1300000000000003" item: { Count: 1b id: "casesmod:case_item" tag: { CaseID: 5 CustomModelData: 5 } } type: "item" }
+      ]
+    }
+    {
+      dependencies: ["3774BE4AB10E22A3"]
+      description: [
+        "Tras el Guardián anciano, busca el Ice Maze de Aquamirae y recorre sus pasillos hasta encontrar a Mother of the Maze. Lleva comida, respiración y una forma clara de orientarte."
+        ""
+        "§6Requisitos: §fTener un Estandarte de batalla no muerto y haber completado la caza anterior."
+        "§6Objetivo: §fDerrota a Mother of the Maze."
+        ""
+        "§eImportante:§r si la derrotas antes de llegar a esta etapa, sus drops se conservan, pero la misión no avanzará."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "aquamirae:maze_mother_spawn_egg"
+      id: "1C0C48AFFD05D092"
+      shape: "hexagon"
+      subtitle: "El corazón del laberinto."
+      title: "Mother of the Maze"
+      x: 9
+      y: 0
+      tasks: [
+        { id: "7EF0CB4B6E5FA178" item: "majruszsdifficulty:undead_battle_standard" type: "item" }
+        { entity: "aquamirae:maze_mother" id: "6D00F3372E2A5842" title: "Derrota a Mother of the Maze" type: "kill" value: 1 }
+      ]
+      rewards: [
+        { id: "26EC513B3A9DAB5A" type: "xp" xp: 900 }
+        { id: "1300000000000004" item: { Count: 1b id: "casesmod:case_item" tag: { CaseID: 6 CustomModelData: 6 } } type: "item" }
+      ]
+    }
+    {
+      dependencies: ["1C0C48AFFD05D092"]
+      description: [
+        "Localiza una Citadel de Iron's Spells después de superar el Ice Maze. Ancient Knight protege sus salas con ataques que castigan quedarse quieto o combatir sin cobertura."
+        ""
+        "§6Objetivo: §fDerrota a Ancient Knight."
+        "§7No hay un objeto adicional: basta con completar la caza anterior y vencer al jefe en esta etapa."
+        ""
+        "§eImportante:§r una muerte anticipada no concede el rango."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "irons_spellbooks:keeper_spawn_egg"
+      id: "20E9752E35BF9A59"
+      shape: "hexagon"
+      subtitle: "El guardián de la Citadel."
+      title: "Ancient Knight"
+      x: 9
+      y: 3
+      tasks: [{ entity: "irons_spellbooks:citadel_keeper" id: "58CF8E8DCE25C328" title: "Derrota a Ancient Knight" type: "kill" value: 1 }]
+      rewards: [
+        { id: "58C09C559B01A9CC" type: "xp" xp: 1050 }
+        { id: "1300000000000005" item: { Count: 1b id: "casesmod:case_item" tag: { CaseID: 7 CustomModelData: 7 } } type: "item" }
+      ]
+    }
+    {
+      dependencies: ["20E9752E35BF9A59"]
+      description: [
+        "Busca la aldea o el santuario donde habita Umvuthi. Sus ataques solares cubren grandes zonas, así que alterna movimiento, cobertura y golpes breves."
+        ""
+        "§6Objetivo: §fDerrota a Umvuthi, the Sunbird después de Ancient Knight."
+        ""
+        "§eImportante:§r el sistema comprueba tu rango personal al morir el jefe."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "mowziesmobs:umvuthi_spawn_egg"
+      id: "47F6CC140750E9F4"
+      shape: "hexagon"
+      subtitle: "El señor del sol."
+      title: "Umvuthi, the Sunbird"
+      x: 6
+      y: 3
+      tasks: [{ entity: "mowziesmobs:umvuthi" id: "255D29E64C358219" title: "Derrota a Umvuthi" type: "kill" value: 1 }]
+      rewards: [
+        { id: "192ED5D9F0513081" type: "xp" xp: 1200 }
+        { id: "1300000000000006" item: { Count: 1b id: "casesmod:case_item" tag: { CaseID: 8 CustomModelData: 8 } } type: "item" }
+      ]
+    }
+    {
+      dependencies: ["47F6CC140750E9F4"]
+      description: [
+        "Vuelve a convocar el Ejército de No Muertos con un Estandarte de batalla y alcanza la oleada en la que aparece Cerberus. Sus tres cabezas ejercen presión constante y castigan quedar rodeado."
+        ""
+        "§6Requisitos: §fHaber derrotado a Umvuthi y tener un Estandarte de batalla no muerto."
+        "§6Objetivo: §fDerrota a Cerberus."
+        ""
+        "§eImportante:§r el combate debe completarse durante esta etapa del Camino."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "majruszsdifficulty:cerberus_spawn_egg"
+      id: "3900DAD14F024F45"
+      shape: "hexagon"
+      subtitle: "El guardián de tres fauces."
+      title: "Cerberus"
+      x: 3
+      y: 3
+      tasks: [
+        { id: "26490B61E49978A4" item: "majruszsdifficulty:undead_battle_standard" type: "item" }
+        { entity: "majruszsdifficulty:cerberus" id: "6E61E2B7EBE0BA30" title: "Derrota a Cerberus" type: "kill" value: 1 }
+      ]
+      rewards: [
+        { id: "0927255BFBD7C05E" type: "xp" xp: 1350 }
+        { id: "1300000000000007" item: { Count: 1b id: "casesmod:case_item" tag: { CaseID: 9 CustomModelData: 9 } } type: "item" }
+      ]
+    }
+    {
+      dependencies: ["3900DAD14F024F45" "3100000000000004"]
+      description: [
+        "Regresa a las regiones heladas de Aquamirae después de Cerberus. El Cuerno de concha demuestra que ya has investigado el Ice Maze y permite abrir esta etapa."
+        ""
+        "§6Requisitos: §fCompletar Aguas heladas y tener un Cuerno de concha."
+        "§6Objetivo: §fDerrota a Ghost of Captain Cornelia."
+        ""
+        "§eImportante:§r la muerte solo cuenta con esta misión activa."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "aquamirae:captain_cornelia_spawn_egg"
+      id: "47D15507B6550BDA"
+      shape: "hexagon"
+      subtitle: "La capitana que no descansa."
+      title: "Ghost of Captain Cornelia"
+      x: 0
+      y: 3
+      tasks: [
+        { id: "6F9FE97533B37FB3" item: "aquamirae:shell_horn" type: "item" }
+        { entity: "aquamirae:captain_cornelia" id: "3461E80568CFF695" title: "Derrota a Ghost of Captain Cornelia" type: "kill" value: 1 }
+      ]
+      rewards: [
+        { id: "316BF0B622CED3A8" type: "xp" xp: 1500 }
+        { id: "1300000000000008" item: { Count: 1b id: "casesmod:case_item" tag: { CaseID: 10 CustomModelData: 10 } } type: "item" }
+      ]
+    }
+    {
+      dependencies: ["47D15507B6550BDA"]
+      description: [
+        "La novena caza conduce al End. Reúne los ojos necesarios de End Remastered, completa el portal y destruye los cristales antes de atacar al dragón."
+        ""
+        "§6Requisitos de la misión: §fTener un Estandarte de batalla no muerto y haber derrotado a Captain Cornelia."
+        "§6Objetivo: §fDerrota al Ender Dragon."
+        ""
+        "§eImportante:§r abrir el portal o matar al dragón antes de esta etapa no completa la misión."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "minecraft:dragon_egg"
+      id: "76B2B40795BFB50A"
+      shape: "hexagon"
+      subtitle: "El umbral del End."
+      title: "Ender Dragon"
+      x: 0
+      y: 6
+      tasks: [
+        { id: "428B20B06B54981E" item: "majruszsdifficulty:undead_battle_standard" type: "item" }
+        { entity: "minecraft:ender_dragon" id: "5901F0DE4615473A" title: "Derrota al Ender Dragon" type: "kill" value: 1 }
+      ]
+      rewards: [
+        { id: "77E7D4B00635B86B" type: "xp" xp: 1800 }
+        { id: "1300000000000009" item: { Count: 1b id: "casesmod:case_item" tag: { CaseID: 11 CustomModelData: 11 } } type: "item" }
+      ]
+    }
+    {
+      dependencies: ["76B2B40795BFB50A" "7100000000000004"]
+      description: [
+        "Después del Ender Dragon, consigue un Ojo viejo mediante Crónicas del Explorador y vuelve a combatir contra el Ejército de No Muertos hasta provocar la aparición de Giant."
+        ""
+        "§6Requisitos: §fCompletar Los ojos perdidos y tener un Ojo viejo."
+        "§6Objetivo: §fDerrota a Giant."
+        ""
+        "§eImportante:§r Giant solo concede el siguiente rango si esta etapa está activa."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "majruszsdifficulty:giant_spawn_egg"
+      id: "7CD780277DC72587"
+      shape: "hexagon"
+      subtitle: "Una sombra sobre el campo."
+      title: "Giant"
+      x: 3
+      y: 6
+      tasks: [
+        { id: "42859D88EC5BE06F" item: "endrem:old_eye" type: "item" }
+        { entity: "majruszsdifficulty:giant" id: "7096CCCB1ED18AC2" title: "Derrota a Giant" type: "kill" value: 1 }
+      ]
+      rewards: [
+        { id: "43BC991293239879" type: "xp" xp: 2100 }
+        { id: "130000000000000A" item: { Count: 1b id: "casesmod:case_item" tag: { CaseID: 12 CustomModelData: 12 } } type: "item" }
+      ]
+    }
+    {
+      dependencies: ["7CD780277DC72587"]
+      description: [
+        "Explora montañas nevadas hasta encontrar una guarida de Frostmaw. La criatura alterna golpes físicos con ataques de hielo capaces de inmovilizarte."
+        ""
+        "§6Objetivo: §fDerrota a Frostmaw después de Giant."
+        "§7La movilidad, la resistencia al frío y un terreno despejado facilitan el combate."
+        ""
+        "§eImportante:§r una derrota anticipada no avanzará el Camino."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "mowziesmobs:frostmaw_spawn_egg"
+      id: "1A9E540452D99245"
+      shape: "hexagon"
+      subtitle: "El depredador de la ventisca."
+      title: "Frostmaw"
+      x: 6
+      y: 6
+      tasks: [{ entity: "mowziesmobs:frostmaw" id: "16DD82E02AE50565" title: "Derrota a Frostmaw" type: "kill" value: 1 }]
+      rewards: [
+        { id: "33933451E3F18B75" type: "xp" xp: 2250 }
+        { id: "130000000000000B" item: { Count: 1b id: "casesmod:case_item" tag: { CaseID: 13 CustomModelData: 13 } } type: "item" }
+      ]
+    }
+    {
+      dependencies: ["1A9E540452D99245"]
+      description: [
+        "Reúne tres cabezas de esqueleto del Wither, construye la estructura de invocación lejos de la base y prepárate para un combate que destruye el terreno."
+        ""
+        "§6Requisitos: §fTener 3 cabezas de esqueleto del Wither y haber derrotado a Frostmaw."
+        "§6Objetivo: §fInvoca y derrota al Wither."
+        ""
+        "§eImportante:§r el Wither debe morir cuando esta misión sea tu caza activa."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "minecraft:wither_skeleton_skull"
+      id: "15E926223FEC7142"
+      shape: "hexagon"
+      subtitle: "La tormenta de almas."
+      title: "Wither"
+      x: 9
+      y: 6
+      tasks: [
+        { id: "4528D46F67A14FD6" item: "minecraft:wither_skeleton_skull" type: "item" count: 3 }
+        { entity: "minecraft:wither" id: "0091B3C9EB306F7D" title: "Derrota al Wither" type: "kill" value: 1 }
+      ]
+      rewards: [
+        { id: "574AD32481BE5F6B" type: "xp" xp: 2400 }
+        { id: "130000000000000C" item: { Count: 1b id: "casesmod:case_item" tag: { CaseID: 14 CustomModelData: 14 } } type: "item" }
+      ]
+    }
+    {
+      dependencies: ["15E926223FEC7142" "2100000000000005"]
+      description: [
+        "Desciende a las Catacumbas de Iron's Spells cuando ya hayas alcanzado la etapa de Tinta Épica. The Dead King combina magia, invocaciones y ataques de gran alcance."
+        ""
+        "§6Requisitos: §fHaber derrotado al Wither y completar Tinta épica."
+        "§6Objetivo: §fDerrota a The Dead King."
+        ""
+        "§eImportante:§r debe morir con esta misión activa para conceder C13."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "irons_spellbooks:dead_king_corpse_spawn_egg"
+      id: "507523AB155CA627"
+      shape: "hexagon"
+      subtitle: "El rey bajo las tumbas."
+      title: "The Dead King"
+      x: 9
+      y: 9
+      tasks: [{ entity: "irons_spellbooks:dead_king" id: "64D8D6BAB5398D80" title: "Derrota a The Dead King" type: "kill" value: 1 }]
+      rewards: [
+        { id: "60542AEC0DBFD266" type: "xp" xp: 2700 }
+        { id: "130000000000000D" item: { Count: 1b id: "casesmod:case_item" tag: { CaseID: 15 CustomModelData: 15 } } type: "item" }
+      ]
+    }
+    {
+      dependencies: ["507523AB155CA627" "7100000000000003"]
+      description: [
+        "Regresa a una Ciudad antigua después de The Dead King. El Fragmento de eco acredita la exploración previa del Deep Dark; el combate exige controlar vibraciones y disponer de una ruta de salida."
+        ""
+        "§6Requisitos: §fCompletar Ciudad antigua y tener un Fragmento de eco."
+        "§6Objetivo: §fInvoca y derrota al Warden."
+        ""
+        "§eImportante:§r el Warden solo concede el rango si esta misión está activa."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "minecraft:warden_spawn_egg"
+      id: "509FE7FB4B435B95"
+      shape: "hexagon"
+      subtitle: "El rugido bajo el silencio."
+      title: "Warden"
+      x: 6
+      y: 9
+      tasks: [
+        { id: "347A6D368EAE9BFB" item: "minecraft:echo_shard" type: "item" }
+        { entity: "minecraft:warden" id: "721DC07063E6C5B3" title: "Derrota al Warden" type: "kill" value: 1 }
+      ]
+      rewards: [
+        { id: "2DF1FE219D930903" type: "xp" xp: 3000 }
+        { id: "130000000000000E" item: { Count: 1b id: "casesmod:case_item" tag: { CaseID: 16 CustomModelData: 16 } } type: "item" }
+      ]
+    }
+    {
+      dependencies: ["509FE7FB4B435B95" "5100000000000004"]
+      description: [
+        "Reúne los tres fragmentos del bastón de hueso en la rama funeraria y, después del Warden, activa el ritual de la prisión de The Graveyard."
+        ""
+        "§6Requisitos: §fTener las piezas inferior, central y superior del bastón y completar El bastón fragmentado."
+        "§6Objetivo: §fInvoca y derrota al Corrupted Champion."
+        ""
+        "§eImportante:§r conserva los fragmentos hasta que ambas misiones estén activas."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "graveyard:upper_bone_staff"
+      id: "7E09EFA915991E3B"
+      shape: "hexagon"
+      subtitle: "El prisionero de la cripta."
+      title: "Corrupted Champion"
+      x: 3
+      y: 9
+      tasks: [
+        { id: "5ED9E831374051B8" item: "graveyard:lower_bone_staff" title: "Fragmento inferior del bastón de hueso" type: "item" }
+        { id: "4BD8C422EF024C82" item: "graveyard:middle_bone_staff" title: "Fragmento central del bastón de hueso" type: "item" }
+        { id: "1AEE8EB63F303FAF" item: "graveyard:upper_bone_staff" title: "Fragmento superior del bastón de hueso" type: "item" }
+        { entity: "graveyard:lich" id: "35B9214BF7D0997D" title: "Derrota al Corrupted Champion" type: "kill" value: 1 }
+      ]
+      rewards: [
+        { id: "61D43EA0CA0F5CC1" type: "xp" xp: 3600 }
+        { id: "130000000000000F" item: { Count: 1b id: "casesmod:case_item" tag: { CaseID: 16 CustomModelData: 16 } } type: "item" }
+      ]
+    }
+    {
+      dependencies: ["7E09EFA915991E3B" "2100000000000007"]
+      description: [
+        "El Invocador de almas cinerosas abre el último combate del Camino. Fabrícalo después del Corrupted Champion y utilízalo para llamar a Echo of Tyros."
+        ""
+        "§6Requisitos: §fCompletar Invocador de almas cinerosas y tener el objeto en el inventario."
+        "§6Objetivo: §fInvoca y derrota a Echo of Tyros."
+        ""
+        "§eImportante:§r esta es la caza final; al completarla alcanzarás C16."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "irons_spellbooks:cinderous_soulcaller"
+      id: "0B612BD224C52FC5"
+      shape: "hexagon"
+      subtitle: "La última llama."
+      title: "Echo of Tyros"
+      x: 0
+      y: 9
+      tasks: [
+        { id: "7024435F19D9B8CF" item: "irons_spellbooks:cinderous_soulcaller" type: "item" }
+        { entity: "irons_spellbooks:fire_boss" id: "6781036AD367703F" title: "Derrota a Echo of Tyros" type: "kill" value: 1 }
+      ]
+      rewards: [
+        { id: "0F6705E5506CC5D0" type: "xp" xp: 4500 }
+        { id: "1300000000000010" item: { Count: 1b id: "casesmod:case_item" tag: { CaseID: 16 CustomModelData: 16 } } type: "item" }
+      ]
+    }
+  ]
+}

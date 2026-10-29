@@ -1,0 +1,174 @@
+{
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "artes_arcanas"
+  group: "63BEAD623F394DC5"
+  icon: "irons_spellbooks:diamond_spell_book"
+  id: "58E71A4D96B3B232"
+  order_index: 1
+  progression_mode: "linear"
+  title: "2. Artes Arcanas"
+  quests: [
+    {
+      description: [
+        "Empieza la rama mágica consiguiendo un libro de hechizos real de Iron's Spells. La tarea acepta cualquier objeto equipado en la ranura de grimorio, no el marcador interno genérico del mod."
+        ""
+        "§6Cómo empezar: §ffabrica un Libro de Hechizos de Cobre o encuentra otro grimorio como botín. Consulta §e@irons_spellbooks§f en JEI para ver las opciones disponibles."
+        ""
+        "§6Objetivo: §fTen cualquier libro de hechizos válido en el inventario."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "irons_spellbooks:copper_spell_book"
+      id: "2100000000000001"
+      shape: "square"
+      subtitle: "Una puerta al conocimiento arcano."
+      title: "El primer grimorio"
+      x: 0
+      y: 0
+      tasks: [{
+        id: "2BDF30F6A2A1D736"
+        item: {
+          Count: 1
+          id: "itemfilters:tag"
+          tag: {
+            value: "curios:spellbook"
+          }
+        }
+        title: "Consigue cualquier libro de hechizos"
+        type: "item"
+      }]
+      rewards: [{ id: "6AED56B267B2660C" type: "xp" xp: 225 }]
+    }
+    {
+      dependencies: ["2100000000000001"]
+      description: [
+        "La Tinta Común completa la iniciación arcana y es el requisito temático de la primera caza del Camino del Cazador."
+        ""
+        "Puedes encontrarla en estructuras de Iron's Spells o conseguirla mediante los métodos que muestre JEI. La misión solo comprueba que la tienes y no la consume."
+        ""
+        "§6Objetivo: §fConsigue una Tinta Común."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "irons_spellbooks:common_ink"
+      id: "2100000000000002"
+      shape: "square"
+      subtitle: "El lenguaje básico de la magia."
+      title: "Tinta común"
+      x: 3
+      y: 0
+      tasks: [{ id: "2E2A7615354E0167" item: "irons_spellbooks:common_ink" type: "item" }]
+      rewards: [{ id: "10F84648FEA317A0" type: "xp" xp: 300 }]
+    }
+    {
+      dependencies: ["2100000000000002"]
+      description: [
+        "Convierte la teoría en práctica: consigue un pergamino, fabrica una Mesa de Inscripción e introduce el hechizo en tu grimorio."
+        ""
+        "Equipa el libro en su ranura de Curios, revisa las teclas de Iron's Spells y lanza el hechizo al menos una vez. FTB Quests no puede detectar el lanzamiento de forma fiable."
+        ""
+        "§eConfirmación manual:§r marca la tarea cuando hayas inscrito y lanzado tu primer hechizo."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "irons_spellbooks:inscription_table"
+      id: "2100000000000003"
+      shape: "square"
+      subtitle: "La teoría se convierte en práctica."
+      title: "Primer hechizo"
+      x: 6
+      y: 0
+      tasks: [
+        { id: "3A71D4E2B6C908F1" item: "irons_spellbooks:inscription_table" type: "item" }
+        { id: "6C4D2A1B7E905F33" item: "irons_spellbooks:scroll" type: "item" }
+        { id: "44D1481DD03CB095" title: "He inscrito y lanzado mi primer hechizo" type: "checkmark" }
+      ]
+      rewards: [{ id: "471DFE5B2A73B706" type: "xp" xp: 375 }]
+    }
+    {
+      dependencies: ["2100000000000003" "3774BE4AB10E22A3"]
+      description: [
+        "Después del Elder Guardian se habilita la fabricación regulada de Tinta Rara, siempre que hayas completado las misiones arcanas anteriores. Encontrarla como botín antes sigue siendo válido."
+        ""
+        "Esta misión concede Artes Arcanas II y abre el siguiente tramo de la rama."
+        ""
+        "§6Objetivo: §fConsigue una Tinta Rara."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "irons_spellbooks:rare_ink"
+      id: "2100000000000004"
+      shape: "square"
+      subtitle: "El aprendizaje toma forma."
+      title: "Tinta rara"
+      x: 9
+      y: 0
+      tasks: [{ id: "1F4C53843A5CE597" item: "irons_spellbooks:rare_ink" type: "item" }]
+      rewards: [{ id: "7A53347729FAAB48" type: "xp" xp: 525 }]
+    }
+    {
+      dependencies: ["2100000000000004" "47D15507B6550BDA"]
+      description: [
+        "La Tinta Épica marca el acceso a la magia de alto nivel. Su fabricación queda disponible después de Captain Cornelia y requiere haber avanzado previamente por Artes Arcanas."
+        ""
+        "Esta misión concede Artes Arcanas III y es necesaria antes de la caza de The Dead King."
+        ""
+        "§6Objetivo: §fConsigue una Tinta Épica."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "irons_spellbooks:epic_ink"
+      id: "2100000000000005"
+      shape: "square"
+      subtitle: "Preparación para las Catacumbas."
+      title: "Tinta épica"
+      x: 9
+      y: 3
+      tasks: [{ id: "0619E3C3880F3405" item: "irons_spellbooks:epic_ink" type: "item" }]
+      rewards: [{ id: "12FAC47E085A9445" type: "xp" xp: 750 }]
+    }
+    {
+      dependencies: ["2100000000000005" "507523AB155CA627"]
+      description: [
+        "Tras derrotar a The Dead King puedes alcanzar la categoría legendaria sin necesidad de coleccionar todas las escuelas ni todos los hechizos."
+        ""
+        "Esta misión concede Artes Arcanas IV. Consulta JEI para ver la forma de obtener o mejorar la tinta en la versión actual del modpack."
+        ""
+        "§6Objetivo: §fConsigue una Tinta Legendaria."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "irons_spellbooks:legendary_ink"
+      id: "2100000000000006"
+      shape: "square"
+      subtitle: "Maestría sin coleccionismo forzoso."
+      title: "Tinta legendaria"
+      x: 6
+      y: 3
+      tasks: [{ id: "4CEE4076B4936020" item: "irons_spellbooks:legendary_ink" type: "item" }]
+      rewards: [{ id: "75AF8020851F0512" type: "xp" xp: 1050 }]
+    }
+    {
+      dependencies: ["2100000000000006" "7E09EFA915991E3B"]
+      description: [
+        "El Invocador de almas cinerosas es el objeto necesario para abrir el combate final contra Echo of Tyros. Su fabricación queda reservada para después del Corrupted Champion."
+        ""
+        "Reúne los componentes indicados por JEI y conserva el objeto hasta que la última misión del Camino esté activa. Esta misión concede Artes Arcanas V."
+        ""
+        "§6Objetivo: §fConsigue el Invocador de almas cinerosas."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "irons_spellbooks:cinderous_soulcaller"
+      id: "2100000000000007"
+      shape: "square"
+      subtitle: "La llamada de la última llama."
+      title: "Invocador de almas cinerosas"
+      x: 3
+      y: 3
+      tasks: [{ id: "3C0448854A2ACDA0" item: "irons_spellbooks:cinderous_soulcaller" type: "item" }]
+      rewards: [{ id: "518472394885CABD" type: "xp" xp: 1500 }]
+    }
+  ]
+}

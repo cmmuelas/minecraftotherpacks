@@ -1,0 +1,138 @@
+{
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "profundidades_oceano"
+  group: "63BEAD623F394DC5"
+  icon: "aquamirae:shell_horn"
+  id: "68F7B1029145A57C"
+  order_index: 2
+  progression_mode: "linear"
+  title: "3. Las Profundidades del Océano"
+  quests: [
+    {
+      description: [
+        "Comienza la rama oceánica reuniendo prismarina. Puedes obtenerla de guardianes, ruinas compatibles o bloques de un monumento oceánico."
+        ""
+        "Los bloques solo tienen que estar en el inventario; FTB Quests no los consume."
+        ""
+        "§6Objetivo: §fConsigue 8 bloques de prismarina."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "minecraft:prismarine"
+      id: "3100000000000001"
+      shape: "square"
+      subtitle: "Antes del abismo está la costa."
+      title: "Primer contacto con el mar"
+      x: 0
+      y: 0
+      tasks: [{ id: "38283BDA44F61E87" item: "minecraft:prismarine" type: "item" count: 8 }]
+      rewards: [{ id: "5CAEE894F1049451" type: "xp" xp: 225 }]
+    }
+    {
+      dependencies: ["3100000000000001"]
+      description: [
+        "Prepara un Tanque de oxígeno de Aquamirae para alargar tus inmersiones. Pulsa el icono o consulta JEI para ver su receta exacta."
+        ""
+        "Esta misión concede Océano I. En el orden actual también es el requisito temático de la caza de Tank."
+        ""
+        "§6Objetivo: §fConsigue un Tanque de oxígeno."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "aquamirae:oxygen_tank"
+      id: "3100000000000002"
+      shape: "square"
+      subtitle: "La preparación básica."
+      title: "Respirar bajo el agua"
+      x: 3
+      y: 0
+      tasks: [{ id: "1AA97E27189BEAD8" item: "aquamirae:oxygen_tank" type: "item" }]
+      rewards: [{ id: "666602E59214B57A" type: "xp" xp: 375 }]
+    }
+    {
+      dependencies: ["3100000000000002"]
+      description: [
+        "Entra en un monumento oceánico y recupera una esponja de sus salas o de sus guardianes. No necesitas derrotar todavía al Elder Guardian si su caza aún no está activa."
+        ""
+        "Esta misión concede Océano II y desbloquea el requisito temático de la caza del Elder Guardian."
+        ""
+        "§6Objetivo: §fConsigue una esponja."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "minecraft:sponge"
+      id: "3100000000000003"
+      shape: "square"
+      subtitle: "El dominio de los guardianes."
+      title: "Monumento oceánico"
+      x: 6
+      y: 0
+      tasks: [{ id: "49B3D0D03B4CD621" item: "minecraft:sponge" type: "item" }]
+      rewards: [{ id: "1C8BB3A10D5D909E" type: "xp" xp: 600 }]
+    }
+    {
+      dependencies: ["3100000000000003"]
+      description: [
+        "Localiza una región helada de Aquamirae, entra en el Ice Maze y consigue el Cuerno de concha. El objeto pertenece a la exploración del laberinto y puede obtenerse antes de Captain Cornelia."
+        ""
+        "Esta misión concede Océano III y es el requisito temático de la caza de Ghost of Captain Cornelia."
+        ""
+        "§6Objetivo: §fConsigue un Cuerno de concha."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "aquamirae:shell_horn"
+      id: "3100000000000004"
+      shape: "square"
+      subtitle: "El Ice Maze espera."
+      title: "Aguas heladas"
+      x: 9
+      y: 0
+      tasks: [{ id: "77E463F2116F1A0C" item: "aquamirae:shell_horn" type: "item" }]
+      rewards: [{ id: "7422CF9895C218F4" type: "xp" xp: 900 }]
+    }
+    {
+      dependencies: ["3100000000000004"]
+      description: [
+        "Consigue una Amatista abisal, uno de los materiales avanzados de Aquamirae. Puede proceder del contenido del Ice Maze o de los métodos de fabricación que muestre JEI."
+        ""
+        "Esta misión concede Océano IV, el nivel exigido para fabricar el equipo abisal cuando tu rango del Camino lo permita."
+        ""
+        "§6Objetivo: §fConsigue una Amatista abisal."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "aquamirae:abyssal_amethyst"
+      id: "3100000000000005"
+      shape: "square"
+      subtitle: "Los materiales más profundos."
+      title: "Secretos del abismo"
+      x: 9
+      y: 3
+      tasks: [{ id: "0512C58357D267E0" item: "aquamirae:abyssal_amethyst" type: "item" }]
+      rewards: [{ id: "443408B375867406" type: "xp" xp: 1200 }]
+    }
+    {
+      dependencies: ["3100000000000005" "76B2B40795BFB50A"]
+      description: [
+        "Tras derrotar al Ender Dragon y completar Océano IV podrás fabricar el equipo abisal regulado por Maincra. El Casco del Abismo Cegador representa la culminación de esta rama."
+        ""
+        "Consulta JEI: si todavía aparece bloqueado, revisa el requisito C9 y el progreso Océano IV en el tooltip del objeto."
+        ""
+        "§6Objetivo: §fConsigue un Casco del Abismo Cegador."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "aquamirae:abyssal_heaume"
+      id: "3100000000000006"
+      shape: "square"
+      subtitle: "Una expedición de élite."
+      title: "Equipo abisal"
+      x: 6
+      y: 3
+      tasks: [{ id: "5A093B454DEAD6A4" item: "aquamirae:abyssal_heaume" type: "item" }]
+      rewards: [{ id: "1E6609EAF3F9B590" type: "xp" xp: 1500 }]
+    }
+  ]
+}

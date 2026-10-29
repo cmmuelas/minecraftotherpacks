@@ -1,0 +1,142 @@
+{
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "muerte_no_final"
+  group: "63BEAD623F394DC5"
+  icon: "tombstone:grave_key"
+  id: "7BFA74B0890E43BE"
+  order_index: 4
+  progression_mode: "linear"
+  title: "5. La Muerte no es el Final"
+  quests: [
+    {
+      description: [
+        "Cuando mueras, Corail Tombstone guardará tu inventario en una tumba y te entregará una Llave de tumba al reaparecer. La llave ayuda a localizarla y recuperar los objetos."
+        ""
+        "La tarea se completa al tener la llave en el inventario. No necesitas provocar una muerte adicional si ya conservas una de una tumba anterior."
+        ""
+        "§6Objetivo: §fConsigue una Llave de tumba."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "tombstone:grave_key"
+      id: "5100000000000001"
+      shape: "square"
+      subtitle: "La muerte no borra el viaje."
+      title: "Tu primera tumba"
+      x: 0
+      y: 0
+      tasks: [{ id: "56730E694C95E5FD" item: "tombstone:grave_key" type: "item" }]
+      rewards: [{ id: "1E65E28E11BA6764" type: "xp" xp: 225 }]
+    }
+    {
+      dependencies: ["5100000000000001"]
+      description: [
+        "Consigue un Pergamino del conocimiento de Corail Tombstone. Puede almacenar experiencia mediante las almas de tumba y devolverla posteriormente."
+        ""
+        "Consulta JEI para ver la receta y las formas de obtención disponibles. Esta misión concede Progreso funerario I."
+        ""
+        "§6Objetivo: §fConsigue un Pergamino del conocimiento."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "tombstone:scroll_of_knowledge"
+      id: "5100000000000002"
+      shape: "square"
+      subtitle: "Aprender de los muertos."
+      title: "Conocimiento funerario"
+      x: 3
+      y: 0
+      tasks: [{ id: "5DFF33A5733FD216" item: "tombstone:scroll_of_knowledge" type: "item" }]
+      rewards: [{ id: "77757F00EA60EC9A" type: "xp" xp: 375 }]
+    }
+    {
+      dependencies: ["5100000000000002" "47F6CC140750E9F4"]
+      description: [
+        "Después de Umvuthi podrás fabricar el Almacenador de EXP de Global XP si ya posees Progreso funerario I. Maincra utiliza una receta personalizada más exigente."
+        ""
+        "El bloque permite depositar y retirar experiencia y conserva su contenido al romperse. Esta misión concede Progreso funerario II."
+        ""
+        "§6Objetivo: §fConsigue un Almacenador de EXP."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "globalxp:xp_block"
+      id: "5100000000000003"
+      shape: "square"
+      subtitle: "Nada se desperdicia."
+      title: "Conservar la experiencia"
+      x: 6
+      y: 0
+      tasks: [{ id: "16D18229184266A3" item: "globalxp:xp_block" type: "item" }]
+      rewards: [{ id: "602A191054BF009D" type: "xp" xp: 600 }]
+    }
+    {
+      dependencies: ["5100000000000003"]
+      description: [
+        "Explora las estructuras de The Graveyard y reúne las tres piezas del bastón de hueso: inferior, central y superior. Conserva las tres hasta que llegue el ritual."
+        ""
+        "Esta misión concede Progreso funerario III y es el requisito temático de la caza del Corrupted Champion."
+        ""
+        "§6Objetivo: §fReúne los tres fragmentos del bastón de hueso."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "graveyard:upper_bone_staff"
+      id: "5100000000000004"
+      shape: "square"
+      subtitle: "Preparar el ritual."
+      title: "El bastón fragmentado"
+      x: 9
+      y: 0
+      tasks: [
+        { id: "4B1FF6A9962CD72B" item: "graveyard:lower_bone_staff" title: "Fragmento inferior del bastón de hueso" type: "item" }
+        { id: "25C43184A27853E7" item: "graveyard:middle_bone_staff" title: "Fragmento central del bastón de hueso" type: "item" }
+        { id: "6AEBFC786BB49ED9" item: "graveyard:upper_bone_staff" title: "Fragmento superior del bastón de hueso" type: "item" }
+      ]
+      rewards: [{ id: "52F0937C4B8DC211" type: "xp" xp: 1050 }]
+    }
+    {
+      dependencies: ["5100000000000004" "509FE7FB4B435B95"]
+      description: [
+        "Después de derrotar al Warden, utiliza el bastón reconstruido en la prisión correspondiente de The Graveyard para activar el combate contra el Corrupted Champion."
+        ""
+        "La muerte del jefe puede completar esta misión y la misión del Camino del Cazador, siempre que ambas estén activas. Si lo invocas antes, tendrás que localizar otra prisión o repetir su método de aparición."
+        ""
+        "§6Objetivo: §fDerrota al Corrupted Champion."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "graveyard:upper_bone_staff"
+      id: "5100000000000005"
+      shape: "square"
+      subtitle: "La prisión despierta."
+      title: "Corrupted Champion"
+      x: 9
+      y: 3
+      tasks: [{ entity: "graveyard:lich" id: "4F1C5F2789C9859E" title: "Derrota al Corrupted Champion" type: "kill" value: 1 }]
+      rewards: [{ id: "4B79B0F504343FFB" type: "xp" xp: 1800 }]
+    }
+    {
+      dependencies: ["5100000000000005"]
+      description: [
+        "El Libro de reparación es el objetivo opcional de maestría funeraria. Se utiliza con un alma de tumba para reparar el objeto de la mano principal."
+        ""
+        "Su fabricación exige el rango y el Progreso funerario indicados en el tooltip de JEI. Al llegar aquí ya habrás completado la parte narrativa principal de la rama."
+        ""
+        "§6Objetivo: §fConsigue un Libro de reparación."
+      ]
+      hide_dependency_lines: false
+      hide_dependent_lines: false
+      icon: "tombstone:book_of_repairing"
+      id: "5100000000000006"
+      shape: "square"
+      subtitle: "Conocimiento después del ritual."
+      title: "Libro de reparación"
+      x: 6
+      y: 3
+      tasks: [{ id: "1224CA376CD05DE8" item: "tombstone:book_of_repairing" type: "item" }]
+      rewards: [{ id: "707988CAE9E93152" type: "xp" xp: 1500 }]
+    }
+  ]
+}

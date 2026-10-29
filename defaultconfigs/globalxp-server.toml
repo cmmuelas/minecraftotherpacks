@@ -1,0 +1,29 @@
+# Maincra - Global XP 1.20.1 balanceado
+
+# The amount of XP needed for the comparator to output a redstone signal of strength one.
+# 93 XP gives full signal at roughly 30 stored levels.
+xpForComparator = 93
+
+# Do not vacuum nearby XP orbs automatically. This avoids passive mob-farm collection.
+pickupXP = false
+
+# Only used when pickupXP is true.
+pickupRange = 3.0
+
+# Normal right-click retrieves only enough XP to reach the next level.
+retrieve_until_next_level = true
+
+# -1 means the setting above controls retrieval.
+retrieval_amount = -1
+
+# Sneak-right-click stores XP only down to the previous level, one level per interaction.
+store_until_previous_level = true
+
+# -1 means the setting above controls storing.
+storing_amount = -1
+
+# Return all XP withdrawn. Balance will come from progression gating and the manual interaction.
+retrieval_percentage = 1.0
+
+# Give XP directly to the player bar, not as orbs; prevents direct Mending use from the bank.
+retrieve_xp_orbs = false
